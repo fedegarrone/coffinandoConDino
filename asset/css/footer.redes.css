@@ -1,0 +1,21 @@
+.redes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.redes div {
+  height: 100%;
+}
+
+.redes a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.redes img {
+  height: 2rem;
+}

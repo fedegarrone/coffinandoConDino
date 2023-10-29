@@ -1,0 +1,54 @@
+@import url(../root.css);
+
+main {
+  min-height: calc(100svh - var(--footer-height) - 4rem);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+main form {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: var(--colorCard);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+main form input {
+  width: 80%;
+}
+
+main form textarea {
+  width: 80%;
+  resize: vertical;
+}
+
+.comentarios {
+  width: 80%;
+  background-color: var(--colorCard);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.comentario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 1rem;
+}
+
+@media (width<550px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  main form {
+    width: 100%;
+  }
+  .comentarios {
+    width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+.carrito {
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 10px;
+    height: 13rem; /*Borrar este*/
+    max-height: 16rem;
+    padding: 0.3rem;
+    background-color: var(--colorCabecera);
+    box-shadow: 1rem 0.5rem 1.5rem gray;
+  }
+  
+  .carta {
+    display: inline-block;
+    width: 100%; /* Ancho de cada imagen */
+    height: 100%; /* Altura del carrusel */
+    transition: transform 0.5s ease; /* Agrega una animación de transición */
+  }
+  
+
+  /* Animación de desplazamiento automático */
+  @keyframes carrusel {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .carrito .carta {
+    animation: carrusel 12s infinite; /* Inicia la animación al pasar el mouse */
+  }
+  
+  .carta a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+    border-radius: 10px;
+  }

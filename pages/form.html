@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <link rel="stylesheet" href="../asset/css/form/form.main.style.css" />
+    <link rel="icon" href="../asset/media/img/favicon-16x16.png" />
+    <title>Opiniones</title>
+  </head>
+  <body>
+    <header>
+      <section class="navbar">
+        <!-- Menú Hamburguesa -->
+        <div class="menuBurger">
+          <img src="../asset/media/img/menuBurger.svg" alt="Menú Hamburguesa" />
+        </div>
+        <nav class="burger">
+          <div><a href="../index.html">Inicio</a></div>
+          <div><a href="AboutUs.html">Nosotros</a></div>
+          <div><a href="form.html">Opiniones</a></div>
+        </nav>
+      </section>
+      <section>
+        <!-- Nombre -->
+        <img src="../asset/media/img/dino.svg" alt="" />
+        <h1>Coffinando con Dino</h1>
+      </section>
+      <section>
+        <!-- Logo -->
+        <img src="../asset/media/img/dino.svg" alt="" />
+      </section>
+    </header>
+
+    <main>
+      <form action="" id="sheetdb-form">
+        <b>
+          <p>Dejanos tu comentario!</p>
+          <p>Ayudanos a mejorar ❤</p>
+        </b>
+        <label for="name">Nombre:</label>
+        <input type="text" placeholder="Inserte su nombre" id="name" required />
+        <label for="text">Comentario:</label>
+        <textarea
+          name="text"
+          id="text"
+          cols="30"
+          rows="10"
+          placeholder="Escriba su comentario"
+          required></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+      <section class="comentarios">
+        <h1>Comentarios</h1>
+        <div id="app"></div>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <!-- Nombre -->
+        <a href="../index.html">
+          <div>
+            <img src="../asset/media/img/dino.svg" alt="" />
+            <h1>Coffinando con Dino</h1>
+          </div>
+        </a>
+      </section>
+      <div class="divisor"></div>
+      <section class="redes">
+        <div>
+          <a href="">
+            <img src="../asset/media/img/github.svg" alt="github">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="../asset/media/img/instagram.svg" alt="instagram">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="../asset/media/img/facebook.svg" alt="facebook">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="../asset/media/img/email.svg" alt="email">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="../asset/media/img/twitter.svg" alt="twitter/X">
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script type="module" src="../asset/js/form/form.js"></script>
+</html>

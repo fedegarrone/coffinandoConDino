@@ -1,0 +1,98 @@
+main {
+  padding: 2rem;
+  min-height: calc(100svh - var(--footer-height) - 4rem);
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.aboutUs {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+.foto-perfil {
+  width: 250px; 
+  height: 250px;
+  overflow: hidden;
+}
+
+.foto-perfil img {
+  width: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+
+  .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    p {
+      margin: 0.5rem 0 1rem;
+    }
+  }
+  
+  .cardsContainer {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    height: 100%;
+    width: 16.5rem;
+    background-color: var(--colorCard);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px lightslategray;
+  
+    img {
+      height: 11rem;
+      width: 9rem;
+      border-radius: 1rem;
+      object-fit: cover;
+      -webkit-transition: -webkit-transform 0.4s;
+      transition: transform 0.4s;
+    }
+  
+    img:hover {
+      -webkit-transform: scale(1.1) rotate(0.01deg);
+      transform: scale(1.1) rotate(0.01deg);
+    }
+    h4 {
+      position: relative;
+      display: block;
+      margin: 1rem 0;
+      cursor: default;
+    }
+    h4::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: black;
+      opacity: 0;
+    }
+    h4:hover::after {
+      width: 100%;
+      opacity: 1;
+      right: 0;
+      transition: all 0.5s ease-in-out;
+    }
+  }

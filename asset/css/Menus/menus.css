@@ -1,0 +1,107 @@
+@import url(../root.css);
+@import url(../header.style.css);
+@import url(../footer.style.css);
+
+
+*,html{
+  font-family: var(--font);
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    background-color: var(--colorBg);
+    padding-bottom: var(--footer-height);
+}
+
+main{
+    gap: 2rem;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 2rem;
+    min-height: calc(100svh - var(--footer-height) - 4rem);
+
+}
+
+.salado article{
+    background-color:var(--colorCarne);
+}
+
+.postre article{
+    background-color:var(--colorPostre);
+}
+
+.veggie article{
+    background-color:var(--colorVeggie);
+}
+
+main article{
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    height: 10rem;   
+    width: 90%;
+    gap: 2rem;
+    border-radius: 50rem;
+    box-shadow: 1rem 0.5rem 1.5rem gray;
+    line-height: 3rem;
+}
+
+main article:hover{
+    width: 95%;
+    filter: brightness(102%);
+    transition: 0.5s;
+    text-decoration: underline;
+    
+}
+
+main a{
+    width: 15rem;
+    height: 100%;
+    
+}
+
+main a img{
+    border-radius: 10rem;
+    height: 100%;
+    width: 15rem;
+    filter: brightness(90%);
+    object-fit: cover;
+}
+main a img:hover {
+    filter: brightness(110%);
+    transition: 1s;
+    
+    
+}
+
+main article h3 {
+    font-size: 3rem;
+    
+}
+
+@media (width<700px) {
+  main {
+    justify-content: center;
+    align-items: center;
+  }
+  main article{
+    border-radius: 6rem;
+    gap: 0;
+    flex-direction: column;
+    height: fit-content;
+  }
+  main article h3 {
+    text-align: center;
+    margin: 0 1.5rem;
+    font-size: 2rem;
+  }
+}

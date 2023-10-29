@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Tilt+Neon&display=swap');
+
+
+:root {
+    --font: 'Baloo Da 2','Tilt Neon', sans-serif;
+    --colorCabecera: #e0c2f2;
+    --colorBg: #fdf9ff;
+    --colorCard: #f8ebff;
+    --colorCarne: #ffd3ca;
+    --colorPostre: #fffad9;
+    --colorVeggie: #deffe7;
+    --footer-height: 8rem;
+  }
+  

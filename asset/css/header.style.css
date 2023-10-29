@@ -1,0 +1,45 @@
+@import url(header.navbar.css);
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: var(--colorCabecera);
+  height: 4rem;
+}
+
+header section {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: calc(1/3);
+}
+
+header section:nth-child(2) {
+  gap: 0.5rem;
+  justify-content: center;
+  text-shadow: -1px -1px 0px var(--colorCabecera),
+    1.5px 1.5px 0px var(--colorCabecera),
+    4px 4px 0px var(--colorBg);
+  line-height: 1;
+}
+
+header section:nth-child(3) {
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+header section:nth-child(1) img {
+  height: 1.5rem;
+}
+header section:nth-child(2) img {
+  height: 200%;
+  z-index: 1;
+}
+
+header section:nth-child(3) img {
+  height: 100%;
+}

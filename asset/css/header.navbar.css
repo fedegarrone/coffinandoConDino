@@ -1,0 +1,61 @@
+@keyframes dropdown {
+    to {
+      opacity: 1;
+      display: flex;
+    }
+  }
+  @keyframes getup {
+    to {
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  .burger {
+    z-index: 5;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar a,
+  .navbar a:visited,
+  .navbar a:active {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: var(--colorBg);
+  }
+  
+  .menuBurger {
+    display: none;
+  }
+  
+  @media (width<550px) {
+    .navbar {
+      position: relative;
+    }
+    .burger {
+      background-color: var(--colorCabecera);
+      padding: 1.5rem;
+      display: none;
+      flex-direction: column;
+      opacity: 0;
+      position: absolute;
+      top: 2.5rem;
+      border-radius: 1rem;
+      box-shadow: 1rem 0.5rem 1.5rem gray;
+      transition:  1s ease-in-out;
+    }
+    
+    .menuBurger {
+      display: block;
+    }
+  
+    .menuBurger:hover ~ .burger, .burger:hover {
+      animation: dropdown 1s forwards;
+      display: flex;
+    }
+  }

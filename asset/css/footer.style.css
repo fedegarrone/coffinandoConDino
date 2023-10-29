@@ -1,0 +1,72 @@
+@import url(./footer.redes.css);
+
+footer {
+  height: var(--footer-height);
+  background-color: var(--colorCabecera);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+  }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+footer section {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer section:nth-child(1){
+  overflow: hidden;
+
+}
+
+.divisor {
+  border: 1px solid var(--colorBg);
+  border-radius: 1px;
+  height: 80%;
+}
+
+footer section:nth-child(1) div {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  text-shadow: -1px -1px 0px var(--colorCabecera),
+  1.5px 1.5px 0px var(--colorCabecera),
+  4px 4px 0px var(--colorBg);
+  line-height: 1;
+}
+
+footer section:nth-child(1) a, 
+footer section:nth-child(1) a:visited, 
+footer section:nth-child(1) a:active 
+{
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+footer section:nth-child(1) img {
+  height: 10rem;
+}
+
+@media (width<657px) {
+  .divisor{
+  height: 0;
+  width: 90%;
+  }
+  footer {
+  gap: 0.3rem;
+  flex-direction: column;
+  }
+}
