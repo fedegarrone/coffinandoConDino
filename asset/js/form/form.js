@@ -1,6 +1,6 @@
 // Importaciones
 import { postComment } from "./post-comment.js";
-import { Render } from "./render.js";
+import { Render } from "./Render.js";
 import { printer } from "./printer.js";
 
 // Definicion de Constantes
